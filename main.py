@@ -1,9 +1,10 @@
 from telegram import Update, ReplyKeyboardMarkup, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import CommandHandler, Application, MessageHandler, CallbackQueryHandler, ContextTypes, filters, ConversationHandler
+import os
 
 #token bot
 
-TOKEN = "8694994711:AAEzTBrkazx680-erLC91q32o15_9LyaZOg"
+TOKEN = os.getenv("TOKEN")
 
 ADMIN_ID = 7462244340
 products = {
